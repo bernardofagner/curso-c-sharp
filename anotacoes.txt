@@ -158,12 +158,106 @@ Visual Studio - C#{
     	<, >, <=, >=, ==, !=
     }
 
-    Operadores lógicos{
-    	E lógico: '&&'
-    	OU lógico ||
-    	Ou Exclusivo '^' Proposições diferentes geram resoltados verdadeiros.
+    Operadores lógicos 1 e 2{
+    	E lógico: '&&' (binario)
+    	OU lógico || (binario)
+    	Ou Exclusivo '^' (binario)
+        Negação '!' (unario)
+        Proposições diferentes geram resoltados verdadeiros.
     	Ex.: V^F = V
 
     	Proposicoes iguais geram resultado falsos. Ex.: V^V = F.
     }
+
+    Oeradores de atribuicao{
+        a = b;
+        a += b;
+        a -= b;
+        a *= b;
+        a /= b;
+        a++; Usa 'a' e incrementa
+        a--; 
+        ++a; Incrementa e usa 'a'
+        --a;
+
+        ObjetoX obj1 = new ObjetoX();
+
+        ObjetoX obj2 = obj1;
+    }
+
+    Operadores unarios{
+        Trabalha com apenas 1 operando, diferente dos operadores binarios (2 operandos), ou ternários (3 operandos).
+
+        Menos: '-';
+        Negação lógica: '!';
+        Incremento unitario: '++';
+        Decremento unitario: '--';
+    }
+
+    Operadores ternarios{
+        É um operador condicional, relacional e/ou logico.
+
+        OK
+    }
+
+    Estrutura, if else{
+        Ok, muito tranquilo, igual a C++.
+
+        OK
+    }
+
+    Estrutura switch{
+        Recebe um valor numerico como forma de controle.
+
+        Um valor do tipo char também é valido.
+    }
+
+    Estrutura while{
+        So assisti. Igual C++
+
+        OK;
+    }
+
+    Estrutura do while{
+        So assisti, igual a C++
+
+        OK;
+        do{
+            /*something*/
+        }while(condicao);
+    }
+
+    Estrutura for{
+        So assisti, igual ao C++.
+
+        OK;
+    }
+
+    Estrutura foreach{
+        string palavra = "parangaricutirrimirruaru";
+        foreach(var letra in palavra) {
+            Console.Write($"{letra}-");
+        }
+    }
+
+    break{
+        Usado para interromper o fluxo de execução de estruturas de controle no qual ele foi escrito.
+
+        OK;
+    }
+
+    continue{
+        Interrompe o fluxo da iteração atual em uma repetição e parte para a proxima iteracao.
+
+        OK;
+    }
+
+    Conceito de Classes e Objetos{
+        Uma classe é um tipo de dado personalizado.
+
+        Uma classe possui atributos(dados) e comportamentos(métodos).
+
+        Um objeto é uma representação digital de algo do mundo real. e é instanciado através do método construtor da classe.
+    }
+
 }
