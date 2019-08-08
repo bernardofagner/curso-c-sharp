@@ -280,4 +280,28 @@ Visual Studio - C#{
         Um método estatico é aquele que pode ser utilizado sem a necessidade da existência de um objeto. Ou seja, o método passa a ser um método associado à classe e não mais À instancia de um objeto daquela classe.
     }
 
+    Palavra reservada 'this'{
+        Palavra reservada para acessar explicitamente atributos de uma instancia de classe.
+
+        Ok.
+    }
+
+    Parametros variaveis e nomeados{
+        Assisti as auals e pratiquei um pouco.
+
+        OK;
+    }
+
+    Propriedades e Getters&Setters{Existem 3 propriedades: public, private e restricted.
+        Realiza o acesso à variáveis protegidas. por private ou restricted.
+
+        Se você não definir o nivel de privacidade do atributo, por padrão ele é privado.
+
+        Rever o conceito de propriedades depois p entender melhor. Aula 55.
+    }
+
+    Atributos ReadOnly{
+        
+    }
+
 }
