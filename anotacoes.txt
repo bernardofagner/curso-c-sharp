@@ -258,6 +258,26 @@ Visual Studio - C#{
         Uma classe possui atributos(dados) e comportamentos(métodos).
 
         Um objeto é uma representação digital de algo do mundo real. e é instanciado através do método construtor da classe.
+
+        Se nenhum construtor for criado, o objeto será instanciado usando o construtor padrao
+    }
+
+    funcao{
+        igualzinho em C++.
+
+        OK;
+    }
+
+    método{
+        É uma função pertencente a uma classe.
+
+        A assinatura de um metodo deve ser única para cada metodo. Logo, não podem haver dois ou mais métodos com o mesmo nome e com parâmetros identicos.
+    }
+
+    metodos estaticos{
+        Metodos estaticos possuem a palavra reservada 'static'.
+
+        Um método estatico é aquele que pode ser utilizado sem a necessidade da existência de um objeto. Ou seja, o método passa a ser um método associado à classe e não mais À instancia de um objeto daquela classe.
     }
 
 }
