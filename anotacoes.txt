@@ -1,0 +1,169 @@
+Parei na aula 17 do curso
+
+Conceitos {
+    Estrutura de dados: Formas de representar informações/dados.
+
+    Fim
+}
+
+.Net{
+    é um framework que utiliza a linguagem c# para desenvolvimento backend de sistemas web e mobile. A extensão de um arquivo C# é ".cs". Caa sentença de código em C# termina com ";".
+
+    CLR: Common Lenguage Runtime{
+        Converte o código em C# para codigo e máquina para ser lido em Windows, Linux ou MAC (Like a virtual machine)
+    }
+    LIB: Bibliotecas
+
+    Arquitetura da solução(aplicação) .Net{
+        Uma aplicação pode ter 1 ou mais projetos(assembly), que podem gerar um arquivo.exe ou .dll;
+        Uma aplicação C# utiliza namespaces(similar a pacotes em java) e classes (arquivos) dentro de um namespace;
+    }
+}
+
+Visual Studio - C#{
+
+	Configurações e atalhos{
+		ctrl +k +d formata o codigo segundo as suas preferêmcias;
+
+	    para modificar as preferências, vá em: Ferramentas/Opções/Editor de texto/C#/Estilo de código/ Formatação/Novas Linhas;
+
+	    Para executar o programa clique no botão de "Play" da IDE, ou use o atalho ctrl+F5;
+	}    
+
+    Comentário{
+    	Comentário em Bloco ctrl +K +C
+    	des-Comentário em Bloco ctrl +K +U
+    }
+
+    Variaveis{
+
+    	C# é uma inguagem fortemente tipada.
+    	'const' palavra reservada que indica que a variável (espaço de memória) não pode ser modificada ao durante a execuçaõ do programa.
+
+    	Declaração de variaveis{
+    		Modelo: tipo var_nome = valor;
+    		double peso = 4.0;
+    		const double PI = 3.1415;
+    		int idade = 20;
+    		bool estaCerto = true;
+
+    		Por padrão todo numero literal em ponto flutuante (decimal) é double, para forçar um tipo float, defina o valor com a letra 'f' no final.
+    				
+			float numeroFloat = 3.13f;
+			double = 3.14;
+
+			char letra = 'a'; //Aspas simples
+
+			string nome = "Fagner" // aspas duplas
+    	}
+
+    	tipos{
+    		numericos{
+    			ponto flutuante{
+    				float = 4 bytes = 32 bits
+    				double = 8 bytes = 64 bits
+    			}
+
+    			inteiros{
+    				byte = 1 bite = 8 bits
+    				sbyte = vai de -128 a +127
+	    			short = 2 bytes = 16 bites
+	    			int = 4 bytes = 32 bits
+	    			long = 8 bytes = 64 bits
+    			}
+
+    			Um tipo menor cabe em um tipo maior, mas o contrário não é válido.
+    		}
+    	}
+    }
+
+    Inferencia de tipo{
+    	Para declarar uma variável sem um tipo definido, use a palavra reservada 'var'. A variável adquire o tipo adequado conforme o valor que ela recebe. E uma vez o tipo definido, ele não pode ser mais modificado. Variáveis desse tipo dé declaração (implícita) devem ser inicializadas na declaração.
+
+    	Modelo: var nome = valor
+    }
+
+    Interpolação de string{
+    	Alternativa à concatenação de strings com variáveis (aquela que usa o simbolo '+').
+
+    	A sintaxe é parecida com a funcao printf() do C. Mas aqui a sintaxe é a seguinte:
+
+    	Console.WriteLine("O {0}, é o mago mais poderoso de {1}.", nomeDoMago, nomeDoMundo);
+
+    	Exemplo:
+    	Console.WriteLine("O {0}, é o mago mais poderoso de {1}.", nomeDoMago, nomeDoMundo);
+
+    	Cada número entre as chaves representa a ordem em que as variáveis nomeDoMago e nomeDoMundo apareceerão na string.
+
+    	Outra forma é inserir um simbolo sifrão imediatamente antes do abre aspas da string e informar o nome da variavel no lugar dos numeros.
+
+    	Exemplo:
+    	Console.WriteLine($"O {nomeDoMago}, é o mago mais poderoso de {nomeDoMundo}.");
+    }
+
+    Notação ponto '.'{
+    	Denota a utilização de um método. O nome do objeto está à esquerda do ponto e o nome do métdo fica à direita.
+
+    	Exemplo:
+    	"Fagner".ToUpper(); ou
+    	string nome = "Fagner";
+    	nome.ToUpper
+    	Resulta em: FAGNER
+
+    	A notação ponto não funciona em objetos que estão vazios (valor 'null)'.
+
+    	Exemplo: string msg = null;
+    	msg.length não vai funcionar, pois msg não faz referência a nenhum objeto, logo o método length não poderá ser executado, pois ele depende da existência de um objeto. Mas se você adicionar uma interrogacao '?' no final do nome da variável o C# verificará se a variável faz referência a um objeto, antes de chamar o metodo length.
+
+    	Exemplo: msg?.length
+
+    	Isso representa o conceito de navegacao segura. Evitando erros em tempo de compilação e em tempo de execução.
+    }
+
+    Entrada de dados - Via Console{
+    	A leitura de dados pode ser feita pelo comando Console.ReadLine();
+    	Os dados lidos da entrada padrão (texlado), será lido como texto, mesmo números. Logo, os valores numericos lidos devem ser convertidos para o tipo adequado.
+
+    	Exemplo: string nome = Console.ReadLine();
+
+    	Para realizar a conversão explicita de tipo, faça:
+
+    	int idade = int.Parse(Console.ReadLine());
+    }
+
+    Formatação de numeros{
+    	Não tão importante para o momento. Assisti, mas nao fiz quase nada.
+
+    	ok
+    }
+
+    Conversões (de tipo){
+    	A conversão entre numeros é realizada via cast.
+    	cast = (tipo)variável
+
+    	Exemplo: variavelInt = (tipoInteiro)variavelDouble.
+
+    	Exemplo de forma segura de se fazer uma conversão explicita:
+
+    	int.TryParse(Console.ReadLine(), out int numero2);
+    }
+
+    Operadores aritmeticos{
+    	Assisti, mas nao fiz quase nada. Fácil.
+    	+, -, /, %, *.
+    }
+
+    Operadores relacionais{
+    	O resoltado da operação é um valor booleano.
+    	<, >, <=, >=, ==, !=
+    }
+
+    Operadores lógicos{
+    	E lógico: '&&'
+    	OU lógico ||
+    	Ou Exclusivo '^' Proposições diferentes geram resoltados verdadeiros.
+    	Ex.: V^F = V
+
+    	Proposicoes iguais geram resultado falsos. Ex.: V^V = F.
+    }
+}
