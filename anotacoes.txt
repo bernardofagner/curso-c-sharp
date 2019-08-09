@@ -1,6 +1,8 @@
 Parei na aula 17 do curso
 
 Conceitos {
+    MVP = Fusca -> Uno -> Corolla -> BMW.
+
     Estrutura de dados: Formas de representar informações/dados.
 
     Fim
@@ -38,7 +40,8 @@ Visual Studio - C#{
     Variaveis{
 
     	C# é uma inguagem fortemente tipada.
-    	'const' palavra reservada que indica que a variável (espaço de memória) não pode ser modificada ao durante a execuçaõ do programa.
+
+    	'const' é uma palavra reservada que indica que a variável (espaço de memória) não pode ser modificada ao durante a execuçaõ do programa. A variável deve ser inicializada logo na sua declaração, pois seu valor é resolvido em tempo de compilação.
 
     	Declaração de variaveis{
     		Modelo: tipo var_nome = valor;
@@ -297,11 +300,47 @@ Visual Studio - C#{
 
         Se você não definir o nivel de privacidade do atributo, por padrão ele é privado.
 
-        Rever o conceito de propriedades depois p entender melhor. Aula 55.
+        Rever o conceito de propriedades e set e get, depois p entender melhor. Aula 55.
     }
 
     Atributos ReadOnly{
-        
+        a palavra reservada 'readonly' torna o atributo imutável no contexto de execução do programa, mas permite que ele seja inicializado via construtor.
+
+        Ex.: radyonly string sexo;
+
+        Construtor(){
+            string sexo = "meu_sexo";
+        }
+    }
+
+    Enumeracoes{
+        É uma forma de representar informações de forma padronizada.
+
+        A declaracao de uma enumeracao é feita por meio da palavra reservada 'enum'.
+
+        Não se coloca acento nos itens de uma enuneracao. Não gera erro, mas eh padrão. Primeira letra da palavra maiuscula.
+
+        Uma enum pode ser convertida em inteiro via cast. O inteiro gerado é o id da enum.
+    }
+
+    sstructs{
+        Structs possuem atributos, construtor e metodos, assim como implementar interfaces.
+
+        OK;
+    }
+
+    Structs vs Clases{
+        Structs são muito semelhantes à classes, em termos de estrutura e sintaxe. A diferença mais relevante é que um objeto de uma classe deve ser instanciado usando a palavra reservada 'new', uma struct pode ser declarada como se fosse um tipo primitivo.
+
+        As atribuições realizadas de uma struct A para outra struct B, são sempre por VALOR.
+        structB = structA. A structB recebe a copia dos valores que existem nos atributos da structA. Ideal pra ambientes one há programaçõa paralela.
+
+        As atribuições realizadas de uma classe A para outra classe B, são sempre por REFERENCIA.
+        classeA = classeB. A classeB recebe a referencia de memoria da classeA. Logo, ambas apontam para o mesmo endereco (objeto).
+    }
+
+    Parametros por referencia{
+
     }
 
 }
